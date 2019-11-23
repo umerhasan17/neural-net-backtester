@@ -21,6 +21,9 @@ The model should take in the ticker symbol of a company and output a company sen
 ## Part 2 - Looking for Videos
 
 * Query a YouTube API with the generated brand names. 
+* Investigate how to build the query given a brand name.
+* e.g. Gucci + product + review, Gucci + ratings, Gucci + bad + quality? 
+* There could be some positive, neutral and negative queries generated looking for specific data and amalgamating this using a weighting. 
 * Use a text classifier to judge the relevance of the video based on the video title, tags and description. 
 
 ## Part 3 - Video Understanding
