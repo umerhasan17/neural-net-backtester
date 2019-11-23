@@ -10,7 +10,8 @@ The model should take in the ticker symbol of a company and output a company sen
 * YouTube is a haven for people to give their opinions on their daily lives and there is no shortage of this. 
 * The site is used for product reviews (e.g. make-up, games, technology, home appliances, new product unboxings) with channels boasting millions of subscribers. 
 * Firstly we will try to analyse 2 markets: make-up and technology. 
-* Within make-up there is scope to analyse videos giving positive or negative opinions on new companies and products. 
+* Within make-up there is scope to analyse videos giving positive or negative opinions on new companies and products. The prime example is the upcoming brand ELF Beauty whose revenues soared after a wave of positive sentiment on YouTube. 
+* Within technology we can analyse videos to find the best CPUs, GPUs, phones, headphones, drones, gaming rigs, and cameras on the market and which company will be profiting off of this in the future. 
 
 ## Part 1 - Brand Names
 
@@ -34,3 +35,4 @@ The model should take in the ticker symbol of a company and output a company sen
 * Factor in geographical data to analyse product and service launches/usage/sentiment in a specific region e.g. a soap brand by Unilever might be performing well in emerging markets however influence might be decreasing in developed economies. 
 * Analyse advertisments and marketing campaigns companies make on highly influential YouTube channels.
 * Analyse relevant video comments for sentiment. 
+* Investigate lags for signals from YouTube to movements in the stock price. 
