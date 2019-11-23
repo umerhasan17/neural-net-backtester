@@ -1,0 +1,2 @@
+class YoutubeTranscriber:
+    pass
