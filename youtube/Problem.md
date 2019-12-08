@@ -26,7 +26,7 @@ The model should take in the ticker symbol of a company and output a company sen
 * There could be some positive, neutral and negative queries generated looking for specific data and amalgamating this using a weighting. 
 * Use a text classifier to judge the relevance of the video based on the video title, tags and description. 
 
-## Part 3 - Video to Signal
+## Part 3 - Video to Review
 
 * Get the auto generated YouTube subtitles for the specific video and analyse text using a text classifier. 
 * This will output a sentiment score for the specific video about a specific brand and should then be weighted using the relevance score.
@@ -42,6 +42,8 @@ The model should take in the ticker symbol of a company and output a company sen
 
 ### Calculating the final sentiment score for a product
 * For now a simple weighted average should be taken in the form of video1_sentiment * video1_relevance + ... + videoN_sentiment * videoN_relevance  / (number of videos)
+
+## Part 4 - Review to Signal
 
 ### Convert product review to sales
 * Estimate number of products sold. 
