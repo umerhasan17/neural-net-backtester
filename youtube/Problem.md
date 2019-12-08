@@ -43,9 +43,23 @@ The model should take in the ticker symbol of a company and output a company sen
 ### Calculating the final sentiment score for a product
 * For now a simple weighted average should be taken in the form of video1_sentiment * video1_relevance + ... + videoN_sentiment * videoN_relevance  / (number of videos)
 
-* Convert product review to sales: estimate number of products sold. A starting point would be to compare to previous products and their volumes sold. In the absence of previous products, look at similarly sized firms in the industry. The model would need to take into account the current and future economic climate. Include error bars for sales figures. Correct the figures if and when sales reports emerge. 
-* Convert sales to revenue and profit margins: this needs to take into account the importance of the product within the company. The revenue is the average price * number of sales. This should be converted into gross profit. What percentage of the total profit is due to the specific product? 
-* Convert profit margings to EPS and changes in stock price. The change in profit should be correlated to the change in stock price assuming the P/E ratio stays the same throughout. After a given margin of safety a signal should be outputted by the model for the specific financial instrument in question.
+### Convert product review to sales
+* Estimate number of products sold. 
+* A starting point would be to compare to previous products and their volumes sold. 
+* In the absence of previous products, look at similarly sized firms in the industry.
+* The model would need to take into account the current and future economic climate. 
+* Include error bars for sales figures. 
+* Correct the figures if and when sales reports emerge. 
+
+### Convert sales to revenue and profit margins
+* This needs to take into account the importance of the product within the company. 
+* The revenue is the average price * number of sales. 
+* This should be converted into gross profit. 
+* What percentage of the total profit is due to the specific product? 
+
+### Convert profit margings to EPS and changes in stock price
+* The change in profit should be correlated to the change in stock price assuming the P/E ratio stays the same throughout. 
+* After a given margin of safety a signal should be outputted by the model for the specific financial instrument in question.
 
 ## Future Development
 
