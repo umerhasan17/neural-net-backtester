@@ -30,6 +30,19 @@ The model should take in the ticker symbol of a company and output a company sen
 
 * Get the auto generated YouTube subtitles for the specific video and analyse text using a text classifier. 
 * This will output a sentiment score for the specific video about a specific brand and should then be weighted using the relevance score.
+
+### Calculating sentiment score
+* Use some form of basic text classification e.g. bag of words, or a simple ANN which might perform better than techniques which use no deep learning. We should aim to get to calculating sentiment using more advanced natural langauge models such as the tranformer model or use of a RNN. 
+
+### Calculating relevance
+* Look for specific words in the text e.g. the product name, the company name
+* Remove stop words
+* Don't judge the magnitude of words with sentiment instead find the frequency. 
+* This will lead to a video with lots of thoughts on the product being highly relevant to the final sentiment score. 
+
+### Calculating the final sentiment score for a product
+* For now a simple weighted average should be taken in the form of video1_sentiment * video1_relevance + ... + videoN_sentiment * videoN_relevance  / (number of videos)
+
 * Convert product review to sales: estimate number of products sold. A starting point would be to compare to previous products and their volumes sold. In the absence of previous products, look at similarly sized firms in the industry. The model would need to take into account the current and future economic climate. Include error bars for sales figures. Correct the figures if and when sales reports emerge. 
 * Convert sales to revenue and profit margins: this needs to take into account the importance of the product within the company. The revenue is the average price * number of sales. This should be converted into gross profit. What percentage of the total profit is due to the specific product? 
 * Convert profit margings to EPS and changes in stock price. The change in profit should be correlated to the change in stock price assuming the P/E ratio stays the same throughout. After a given margin of safety a signal should be outputted by the model for the specific financial instrument in question.
