@@ -26,10 +26,13 @@ The model should take in the ticker symbol of a company and output a company sen
 * There could be some positive, neutral and negative queries generated looking for specific data and amalgamating this using a weighting. 
 * Use a text classifier to judge the relevance of the video based on the video title, tags and description. 
 
-## Part 3 - Video Understanding
+## Part 3 - Video to Signal
 
 * Get the auto generated YouTube subtitles for the specific video and analyse text using a text classifier. 
-* This will output a sentiment score for the specific video about a specific brand and should then be weighted using the relevance score. 
+* This will output a sentiment score for the specific video about a specific brand and should then be weighted using the relevance score.
+* Convert product review to sales: estimate number of products sold. A starting point would be to compare to previous products and their volumes sold. In the absence of previous products, look at similarly sized firms in the industry. The model would need to take into account the current and future economic climate. Include error bars for sales figures. Correct the figures if and when sales reports emerge. 
+* Convert sales to revenue and profit margins: this needs to take into account the importance of the product within the company. The revenue is the average price * number of sales. This should be converted into gross profit. What percentage of the total profit is due to the specific product? 
+* Convert profit margings to EPS and changes in stock price. The change in profit should be correlated to the change in stock price assuming the P/E ratio stays the same throughout. After a given margin of safety a signal should be outputted by the model for the specific financial instrument in question.
 
 ## Future Development
 
